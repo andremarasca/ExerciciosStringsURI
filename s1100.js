@@ -1,3 +1,6 @@
+var input = require("fs").readFileSync("/dev/stdin", "utf8");
+var lines = input.split("\n");
+
 let BFS = (i, j) => {
   let mascara = [
     [-2, +1],
@@ -37,9 +40,6 @@ let BFS = (i, j) => {
 };
 
 ////// leitura e processamento
-
-var input = require("fs").readFileSync(__dirname + "/dev/stdin/input.txt", "utf8");
-var lines = input.split("\r").join("").split("\n");
 
 for (let l = 0; lines[l]; l++) {
   let line = lines[l];
